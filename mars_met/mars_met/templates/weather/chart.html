@@ -1,0 +1,13 @@
+<head>
+	<title>Mars Weather Chart</title>
+
+	<script src="{{ STATIC_URL }}js/jquery-1.9.1.min.js" type="text/javascript"></script>
+	<script src="{{ STATIC_URL }}js/highcharts.js" type="text/javascript"></script>
+    
+    {% load chartit %}
+    {{ chart|load_charts:"container" }}
+    
+</head>
+<body>
+    <div id='container'></div>
+</body>
